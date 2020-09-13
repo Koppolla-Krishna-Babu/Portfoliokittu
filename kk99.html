@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body, html {
+  height:100%;
+  margin: 0;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("kk1.jpg");
+  height:70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+ {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color:lightgray;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+.fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: darkblue;
+}
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position:fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+</style>
+</head>
+<body>
+<div class="hero-image">
+  <div class="hero-text">
+   <h1 class="glow" style="font-size:30px; font-family: Times New Roman" >Hey There <br> I'm Krishna Babu</h1>
+  </div>
+</div>
+<h1 style="font-family:Times New Roman;border-style: inset;color:sienna;background-color:lightgray;position:relative;">About Me!</h1>
+<img id="myImg" src="kk9.jpg" alt="Snow" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+<p style="position:relative;color:black;text-align:left;font-family:Times New Roman">I am Koppolla Krishna Babu.<br>I am Computer graduate from Sathyabam university,Chennai.<br>My long tern goal is to becpme a developer.<br>My strength are My parents and Friends,Hard-Working,Self-Motivation.<br>My weakness are Hard to say NO,tend to shy.<br>
+<b>DOB</b>:10-04-2000<br>
+<b>Age</b>:21<br>
+<b>Father</b>:Ramana<br>
+<b>Mother</b>:Kanthamma<br>
+<b>Hobbies</b>:Pubg,Watching Movies<br>
+<b>Address</b>:10-1313,vinayaknagar,Mulakalcheruvu,CHittoor,Andhrapradesh.
+</p>
+	<h1 style="font-family:Times New Roman;position:relative;border-style:inset;color:sienna;background-color:lightgray">Education</h1>
+	<p style="position:relative;color:black;font-family:Times New Roman"><b>2018-2022:</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Computer science graduate in Sathyabama University,Chennai<br><br>
+	<b>2016-2018:</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;High school Education in Chaitanya collage,Vijayawada<br><br>
+   <b> 2015-2016:</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;SSC in Golden Valley School,Madanapalli</p>
+<ul><h1 style="font-family:Times New Roman;position:relative;border-style:inset;color:sienna;background-color:lightgray">Skills</h1>
+	<li style="font-family:Times New Roman;color:black;position:relative;">Python</li>
+	<li  style="font-family:Times New Roman;color:black;position:relative;">HTML and CSS</li>
+	<li  style="font-family:Times New Roman;color:black;position:relative;">C++</li>
+	<li  style="font-family:Times New Roman;color:black;position:relative;">C</li>
+</ul>	<br>
+<img src="jj.jpg" style="width:500px;height: auto">
+<img src="jj1.jpg" style="width:500px;height: auto">
+<img src="jj2.jpg" style="width:500px;height: auto">
+<br>
+<div class="header">
+  <h1 style="font-family:Times New Roman;color: sienna">Projects</h1>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2 style="font-family:Times New Roman;color: dimgray">Face Recognition</h2>
+    <p style="font-family:Times New Roman;background-color: #C4CDC1">Face Recognition is the most popular and trending technology in the present era. It is an effective way to provide vision to a machine for better interaction with humans. The way of living will be reflected if machines can read our faces. The face recognition system will move the world in a new dimension. It will be beneficial in many ways to find the identity and security.A face recognition system is proposed for advanced applications such as access and security, payments, criminal identifications etc. The process of identification will be based on face recognition which is further divided into three steps: detection of face, extractions of the features and classification, and real time recognition. Detection of face is recognized as the essential step of our system.</p>
+  </div>
+  
+  <div class="column middle">
+    <h2 style="font-family:Times New Roman;color:dimgray">Smart Attendance Management System Using OpenCV</h2>
+    <p style="font-family:Times New Roman;background-color: #99AEAD">Face is the crucial part of the human body that uniquely identifies a person. Using the face characteristics as biometric, the face recognition system can be implemented. The most demanding task in any organization is attendance marking. In traditional attendance system, the students are called out by the teachers and their presence or absence is marked accordingly. However, these traditional techniques are time consuming and tedious. In this project, the Open CV based face recognition approach has been proposed. This model integrates a camera that captures an input image, an algorithm for detecting face from an input image, encoding and identifying the face, marking the attendance in a spreadsheet.</p>
+  </div>
+  
+  <div class="column side">
+    <ul> <h2 style="font-family:Times New Roman;color:dimgray">Websites</h2>
+    <li style="font-family:Times New Roman;background-color: #DEE1DD">Portfolios</li>
+    <li style="font-family:Times New Roman;background-color: #DEE1DD">Online Shopping</li>
+   <li style="font-family:Times New Roman;background-color: #DEE1DD"> Five websites</li>
+</ul>
+  </div>
+</div>
+<div class="w3-container">
+  <h2 style="font-family:Times New Roman;position:relative;border-style:inset;color:sienna;background-color:lightgray">Languages</h2>
+  <div class="w3-light-grey w3-round">
+    <div class="w3-container w3-blue w3-round" style="width:60%">Pyhton</div>
+  </div><br>
+
+  <div class="w3-light-grey w3-round-large">
+    <div class="w3-container w3-blue w3-round-large" style="width:80%">C</div>
+  </div><br>
+
+  <div class="w3-light-grey w3-round-xlarge">
+    <div class="w3-container w3-blue w3-round-xlarge" style="width:75%">C++</div>
+  </div>
+</div>
+
+<h1 style="font-family:Times New Roman;position:relative;border-style: inset;color:sienna;background-color: lightgray">Details</h1>
+<p style="font-family:Times New Roman;position:relative;"><h3>Contact</h3></p>
+<i style="font-size:44px;color:cornflowerblue" class="fa">&#xf095;</i>
+<i style="font-size:44px;padding-left:50px;" class="fa">&#xf0e0;</i>
+<i style="font-size:44px;padding-left:50px;color: deeppink" class="fa">&#xf16d;</i>
+<i style="font-size:44px;padding-left:50px;color:blue" class="fa">&#xf09a;</i>
+<i style="font-size:44px;padding-left:50px;color:cornflowerblue" class="fa">&#xf0e1;</i>
+<i style="font-size:44px;padding-left:50px" class="fa">&#xf09b;</i><br>
+<p style="font-family:tims new Roman;background-color:lightgray">Do u like my Page ?</p>
+
+<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+
+<script>
+function myFunction(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+</script>
+
+</body>
+</html>
